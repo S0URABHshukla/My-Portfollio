@@ -1,0 +1,8 @@
+.GoToTopBtn{
+    /* border: 1px solid red; */
+    position: fixed;
+    bottom: 13px;
+    right: 10px;
+    text-align: center;
+    cursor: pointer; 
+}

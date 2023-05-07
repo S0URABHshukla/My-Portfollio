@@ -1,0 +1,14 @@
+.dropDownBtnDiv> hr{
+    width: 25px;
+    height: 1px;
+    background-color: white;
+    color: white;
+    margin: 2px;
+}
+.dropDownBtnDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 7px;
+
+}

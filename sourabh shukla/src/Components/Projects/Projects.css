@@ -1,0 +1,137 @@
+.p-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    /* margin-bottom: 5rem; */
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 30px;
+}
+.project{
+    border: 5px solid var(--orangeCard);
+    border-radius: 20px;
+    padding: 20px;
+}
+.project-heading{
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.project1, .project2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    /* justify-content: space-between; */
+    /* margin: auto; */
+}
+.project-video-div{
+    /* border: 1px solid red;s */
+    flex: 1;
+}
+.project-about-div{
+    /* border: 1px solid red; */
+    flex: 2;
+    margin: auto;
+    min-width: 500px;
+    /* border: 1px solid red; */
+}
+.project-lang{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.button-goto{
+    text-decoration: none;
+    font-size: 16px;
+    /* color: white; */
+    color: inherit;
+}
+.goto-button-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.p-details{
+    color: var(--gray);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    /* margin: 0; */
+}
+.p-div{
+    font-weight: 600;
+}
+.project-video-div-for-media{
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 0px;
+    /* border: 1px solid red; */
+}
+
+@media all and (max-width: 710px){
+    .project-video-div-for-media{
+        width: 450px;
+    }
+    .project-about-div{
+        min-width: 450px;
+    }
+}
+@media all and (max-width: 660px){
+    .project-video-div-for-media{
+        width: 400px;
+    }
+    .project-about-div{
+        min-width: 400px;
+    }
+}
+@media all and (max-width: 610px){
+    .project-video-div-for-media{
+        width: 350px;
+    }
+    .project-about-div{
+        min-width: 350px;
+    }
+}
+@media all and (max-width: 560px){
+    .project-video-div-for-media{
+        width: 100%;
+        padding: 0;
+    }
+    .project1,.project2{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .project-about-div{
+        min-width: 100%;
+    }
+    .project{
+        padding: 0;
+    }
+    .project-heading{
+        text-align: center;
+        padding: 0;
+        text-decoration: underline;
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,101 @@
+.services{
+  padding: 0 0.3rem 0 0.3rem;
+  display: flex;
+  flex-direction: row;
+  /* height: 90vh;ss */
+  /* margin-bottom: 8rem; */
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  /* margin-bottom:100px; */
+  /* border: 1px solid red; */
+  position: relative;
+  gap: 50px;
+  /* border: 1px solid red; */
+}
+.awesome{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 3rem;
+  /* border: 1px solid blue; */
+}
+
+.awesome>:nth-child(1){
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesome>:nth-child(2){
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesome>:nth-child(3){
+  color: var(--gray);
+  font-size: 16px;
+  margin-top: 1rem;
+}
+.awesome>:nth-child(4){
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 0;
+  margin-left: 0;
+}
+.awesome>:nth-child(4)>a>.s-button{
+  width: 8rem;
+  margin-top: 1rem;
+}
+.cards{
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  /* border: 2px solid red; */
+  gap: 45px;
+  margin-top: 40px;
+}
+
+
+.s-blur1{
+  left: -10rem;
+  top: 7rem;
+}
+.s-blur2{
+  left: 30rem;
+  top: 13rem;
+}
+
+@media all and (max-width:1300px) {
+  .cards>:nth-child(1){
+      display: none;
+  }
+}
+@media all and (max-width:1100px) {
+  .cards>:nth-child(3){
+      display: none;
+  }
+}
+@media all and (max-width:760px) {
+  .cards>:nth-child(2){
+      display: none;
+  }
+}
+@media all and (max-width:500px) {
+  .services{
+      gap: 0px;
+      display: block;
+  }
+  .cards{
+    display: none;
+  }
+  .awesome{
+    text-align: center;
+    display: block;
+  }
+  .awesome>*{
+    display: block;
+    margin: 1rem 0;
+  }
+ 
+}

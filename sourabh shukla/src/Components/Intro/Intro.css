@@ -1,0 +1,132 @@
+.intro{
+  display: flex;
+  gap: 20px;
+  /* height: 77vh; */
+  /* margin-top: 80px; */
+  /* padding-top: 80px; */
+  padding-top: 150px;
+  padding-bottom: 100px;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* border: 1px solid red; */
+}
+.i-left{
+  display: flex;
+  position: relative;
+  /* flex: 1; */
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.i-name{
+  display: flex;
+  flex-direction: column;
+}
+
+.i-name>:nth-child(1){
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name>:nth-child(2){
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name>:nth-child(3){
+  font-size: 16px;
+  font-weight: 100;
+  color: var(--gray);
+  margin-top: 10px;
+}
+.i-buttons-div{
+  display: flex;
+  gap: 3rem;
+}
+.i-button{
+  width: 6rem;
+}
+.i-icons{
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 0rem;
+
+}
+.i-icons>*{
+  transform: scale(0.5);
+}
+.i-icons>*:hover{
+  cursor: pointer;
+}
+
+.i-right{
+  /* flex: 1; */
+  position: relative;
+  margin: auto;
+  margin-top: 0;
+}
+.i-right>img{
+  /* border: 1px solid red; */
+  width: 100%;
+  /* width:600px; */
+}
+/* .i-right>*{
+  position: absolute;
+  z-index: 1;
+}
+
+.i-right>:nth-child(1){
+  transform: scale(0.69);
+  left: -15%;
+  top: -9%;
+}
+.i-right>:nth-child(2){
+  transform: scale(0.67);
+  left: -3rem;
+  top: -4.6rem;
+}
+.i-right>:nth-child(3){
+  transform: scale(1.4);
+  left: 28%;
+}
+.i-right>:nth-child(4){
+  top: -19%;
+  left: -24%;
+  border-radius: 50%;
+  padding: 0;
+  transform: scale(0.6);
+} */
+
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(72px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+}
+@media all and (max-width:950px){
+  .i-right>img{
+      display: none;
+  }
+}
+@media all and (max-width:500px){
+  .intro{
+    gap: 0px;
+  }
+  .i-name{
+      margin: auto;
+      text-align: center;
+  }
+  .i-buttons-div,.i-icons{
+    justify-content: space-around;
+  }
+  
+}

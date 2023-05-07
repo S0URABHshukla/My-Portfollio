@@ -1,0 +1,45 @@
+.skills{
+    text-align: center;
+    position: relative;
+    /* border: 1px solid red; */
+    padding-top: 130px;
+    /* margin: 15rem; */
+}
+
+.s-heading>*{
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.skills-section{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.tools-heading{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.blur-s1{
+    left: 50rem;
+}
+.blur-s2{
+    left: -200px;
+    top: 3rem;
+}
+.html-icon{
+    /* border: 1px solid red; */
+    /* color: var(--orangeCard); */
+    color: var(--orange);
+}
+.html-text{
+    color: var(--black);
+    font-size: 16px;
+}

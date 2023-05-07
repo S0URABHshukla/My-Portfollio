@@ -82,9 +82,9 @@ const Home = ({ scrollRef }) => {
 					I am a goal-oriented, productive and aspiring MERN-Stack web developer. Excited to become an integral part of an organization. 
                     {/* and make a significant contribution to its innovations. */}
 					</h1>
-					{/* <div className={styles.btn}>
+					<div className={styles.btn}>
 						<a
-							href='https://drive.google.com/drive/folders/1rIHbr5o1bgroXjXbI8WQeFFbS6UObNjE' // Resume
+							href='https://drive.google.com/drive/folders/1DvMXCf_5H0NZ9lIZKuvmZSfGo1SaXoxO?usp=share_link' // Resume
 							target='blank'
 						>
 							<Button
@@ -97,7 +97,7 @@ const Home = ({ scrollRef }) => {
 								handleButton={handleButton}
 							/>
 						</a>
-					</div> */}
+					</div>
 				</div>
 
 				<div

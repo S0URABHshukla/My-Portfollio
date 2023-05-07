@@ -1,0 +1,116 @@
+nav{
+  position: relative;
+  /* border: 1px solid red; */
+  height: 10vh;
+}
+.n-wrapper{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 3.5rem;
+  left: 3.5rem;
+  z-index: 10000;
+  margin-left: -3.5rem;
+  margin-right: -3.5rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  background-color: rgba(255, 255, 255, 0.951);
+  /* border: 1px solid red; */
+}
+.n-left{
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  /* position: absolute; */
+}
+
+.n-name{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.n-right{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+.n-list{
+  flex: 10;
+}
+.n-list>ul{
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+.n-list>ul>li{
+  border-bottom: 3px solid transparent;
+}
+.n-list>ul>li:hover,.n-list>ul>a:hover{
+  cursor: pointer;
+  border-bottom: 3px solid var(--yellow);
+}
+.n-list>ul>li:first-child:hover{
+  border-bottom: 3px solid transparent;
+}
+.n-list>ul>a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.n-button{
+  flex: 2;
+}
+
+.nav-dropDownBtn{
+  border-radius: 10px;
+  border: none;
+  /* border: 1px solid red; */
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  /* height: 40px; */
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+.nav-dropDownBtn:hover{
+  cursor: pointer;
+}
+@media all and (min-width: 901px) and (max-width: 1016px){
+  .n-name{
+    font-size: 1rem;
+  }
+  .n-wrapper{
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+}
+@media all and (max-width: 900px){
+  .n-right{
+      display: none;
+  }
+  .nav-dropDownBtn{
+      display: block;
+  }
+}
+@media all and (max-width: 560px){
+  .n-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgba(255, 255, 255, 0.951);
+    /* border: 1px solid red; */
+    margin: 0 10px;
+  }
+}
+
