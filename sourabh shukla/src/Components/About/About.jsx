@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { themeContext } from '../../Context';
 import './About.css';
-import Profilefic from "./profile.png";
+import Profilefic from "./profile.jpg";
 
 function About() {
   const {theme,mode,toggle}  = useContext(themeContext);
@@ -25,7 +25,7 @@ function About() {
         </div>
       </div>
       <h1 className='blinking-text'>
-      <a style={mode?darkmode:lightmode} href="/" class="typewrite" data-period="1000" data-type='[ "Hi , I am Sourabh Shukla Deswal.", "I am a Developer.","I Love Coding.", "I Love Problem Solving.", "I Love to Develop.", "MERN Developer." ]'>
+      <a style={mode?darkmode:lightmode} href="/" class="typewrite" data-period="1000" data-type='[ "Hi , I am Sourabh Shukla.", "I am a Developer.","I Love Coding.", "I Love Problem Solving.", "I Love to Develop.", "MERN Developer." ]'>
         <span class="wrap"></span>
       </a>
     </h1>

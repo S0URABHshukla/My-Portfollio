@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import "./Projects.css";
-import Rodan from "./Asos.png";
-import Indeed from "./greenhouse.jpg";
 import { themeContext } from "../../Context";
+import jidoka from "./jidoka.png"
 function Projects() {
   const {theme,mode,toggle}  = useContext(themeContext);
    const {darkmode,lightdarkmode,lightmode} = theme;
@@ -10,6 +9,86 @@ function Projects() {
   return (
     <div className="projects" id="projects">
       <h1 className="p-title">PROJECTS</h1>
+      <div className="project">
+        <h1 className="project-heading">JIDOKA.COM</h1>
+        <div className="project1">
+          <div className="project-video-div">
+            <div className="project-lang">
+            <img
+                src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                alt="html"
+              />
+              <img
+                src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                alt="css"
+              />
+              <img
+                src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                alt="js"
+              />
+              <img
+                src="https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white"
+                alt="json"
+              />
+            <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="react"/>
+            <img src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white" alt="redux"/>
+            <img src="https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="material-ui" />
+            <img src="https://img.shields.io/badge/Chakra%20UI-3bc7bd?style=for-the-badge&logo=chakraui&logoColor=white" alt="chakra" /> 
+            {/* <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="nodejs" /> */}
+            {/* <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="express" /> */}
+            {/* <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongodb" /> */}
+            </div>
+            <div className="project-video-div-for-media">
+             
+              <img src={jidoka} alt="zostel" style={{width:"100%", height:"100%",margin:"20px 0px",border:"1px solid gray"}}></img>
+            </div>
+            <div className="goto-button-div">
+              <button className="button">
+                <a
+                  className="button-goto"
+                  href="https://ji-doka.com/"
+                  target="_blank"
+                >
+                  LIVE
+                </a>
+              </button>
+              <button className="button">
+                <a
+                  className="button-goto"
+                  href="https://github.com/S0URABHshukla/jidoka"
+                  target="_blank"
+                >
+                  GitHub Repo
+                </a>
+              </button>
+            </div>
+          </div>
+          <div className="project-about-div">
+            <h1 className="p-div">
+            It's a Freelance project, Jidoka is a company that specializes in the production and sales of automation components for FA factory automation.
+            </h1>
+            <h1 className="p-div">Features</h1>
+            <ul className="p-details" style={mode?{color:"lightgray"}:lightmode}>
+              <li>User can search the Automation parts according to their preference</li>
+              <li>Category-wise page listing & Product filtration</li>
+              <li>Add to cart & Multiple types of payment options</li>
+              {/* <li>All the data is coming from backed using fetch and stored payment and booking details in MongoDB</li> */}
+            </ul>
+            <h1 className="p-div">Areas of responsibility</h1>
+            <ul className="p-details" style={mode?{color:"lightgray"}:lightmode}>
+              <li>Developed Navbar Page</li>
+              <li>
+              Developed Single Product Page along with all Functionality
+              </li>
+              {/* <li>Developed Checkout Page along with all Functionality</li> */}
+              <li>Developed fully responsiveness for all diffrent sizes</li>
+            </ul>
+            <h1 className="p-div">
+            A solo project executed in 8 days
+            </h1>
+          </div>
+        </div>
+      </div>
       <div className="project">
         <h1 className="project-heading">Zostel Clone</h1>
         <div className="project1">
